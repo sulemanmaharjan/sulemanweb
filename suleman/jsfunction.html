@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+  <h1 id="fa"></h1>
+  <h1 id="sa"></h1>
+
+
+
+
+  <script>
+
+    function add(a, b) {
+      var c = a + b;
+      return c
+    }
+
+
+    document.getElementById("fa").innerHTML = add(10, 20)
+    document.getElementById("fa").style.color = "red";
+
+
+    var ans = add(40, 50)
+    document.getElementById("sa").innerHTML = ans
+    document.getElementById("sa").style.color = "blue";
+
+
+    var abc = add(555, 32984723)
+  //alert(abc)
+function ftoc(f)
+{
+  return (5/9) * (f-32);
+}
+
+function calculate()
+{
+  var f=document.getElementById("in").value;
+  var c=ftoc(f);
+  document.getElementById("out").value=c.toFixed(1);
+}
+
+function eoo()
+{
+  var f=document.getElementById("nu").value;
+  if(f%2===0)
+  {
+    document.getElementById("un").value="even";
+  }
+  else{
+    document.getElementById("un").value="odd";
+  }
+  
+}
+  </script>
+  <div class="container jumbotron">
+    <h1 class="text-center text-danger p-4">Ferenheit to celcius converter</h1>
+    <div class="row">
+      <div class="col"><input type="number" class="form-control" name="" id="in"></div>
+      <div class="col"><button onclick="calculate()" class="btn btn-primary">convert to celsius</button></div>
+      <div class="col">
+        <input type="number" class="form-control" name=""  id="out">
+      </div>
+    </div>
+
+    <h1 class="text-center text-danger p-4">even or odd</h1>
+    <div class="row">
+      <div class="col"><input type="number" class="form-control" name="" id="nu"></div>
+      <div class="col"><button onclick="eoo()" class="btn btn-primary">convert to celsius</button></div>
+      <div class="col">
+        <input type="text" class="form-control" name=""  id="un">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

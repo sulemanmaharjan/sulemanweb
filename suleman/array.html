@@ -1,0 +1,71 @@
+<script>
+    var x=1;
+    //array
+
+    var x=[1,2,3,4,5]; //element index
+    x[0]=100
+    document.write(x[0])
+
+
+    var person = {firstName:"John", lastName:"Doe", age:46};
+
+    document.write(person.age)
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    var  sortedfruits=fruits.sort();
+
+document.write(fruits.length)
+
+document.write(sortedfruits)
+
+
+
+fruits.push("lemon")
+fruits.push("pineapple")
+fruits.pop();
+fruits.pop();
+document.write("<p>"+fruits+"</p>")
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift(); 
+fruits.unshift("grapes")
+document.write("<p>"+fruits+"</p>")
+
+
+var girls=["sita","rita","gita"]
+var boys=["ram","shyam","hari"]
+
+var all=girls.concat(boys);
+document.write(all)
+
+
+var abc=[100,200,35,14,500] //  "1,2,3,4,5"
+document.write(abc.toString())
+
+var max=0;
+var min=abc[0];
+for (let index = 0; index < abc.length; index++) {
+    
+    if(abc[index]>max)
+    {
+        max=abc[index];
+    }
+    if(abc[index]<min)
+    {
+        min=abc[index];
+    }
+}
+alert("max :"+ max)
+alert("min :"+ min)
+
+document.write("<br />")
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a,b)
+{
+    return a-b;
+});
+document.write(points)
+
+</script>
