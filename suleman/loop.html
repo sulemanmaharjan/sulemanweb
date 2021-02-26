@@ -67,4 +67,61 @@ for(let b=32;b>=17;b--)
 }
 
 
+document.write("<br />--------------------------------------------------------------------------------------------<br />")
+
+var person = {fname:"John", lname:"Doe", age:25};
+
+//document.write(person[fname])
+document.write(person.fname)
+for(key in person)
+{
+   document.write(person[key]);
+}
+    
+document.write("-<br />--------------------------------------------------------------------------------------------<br />")
+
+
+var numbers = [5, 4, 9, 6, 25];
+
+for (let index = 0; index < numbers.length; index++) {
+    document.write(numbers[index])
+    
+}
+document.write("-<br />--------------------------------------------------------------------------------------------<br />")
+ numbers.forEach(
+     
+ 
+ function(x){
+  document.write(x);
+ }
+ 
+ 
+ );
+    
+ document.write("-<br />--------------------------------------------------------------------------------------------<br />")
+
+ for(x of numbers)
+ {
+     document.write(x)
+ }
+ document.write("<br />--------------------------------<br />")
+
+ var person = {fname:"ram", lname:"thapa", age:20};
+ {
+     document.write(person.fname)
+ }
+ document.write("<br />--------------------------------<br />")
+
+ var person = {fname:"ram", lname:"thapa", age:20};
+ for(key in person)
+ 
+{
+   document.write(person[key]);
+}
+document.write("<br />--------------------------------<br />")
+ 
+var person = {fname:"ram", lname:"thapa", age:20};
+ 
+
+
 </script>
