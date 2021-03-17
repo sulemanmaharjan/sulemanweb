@@ -1,0 +1,98 @@
+<body id="abc">
+    sdl,kmfsdkl
+    dsfkeldsjm
+    edwfrkew
+
+
+<input type="text" id="n">
+<button onclick="ceo()">check even or odd</button>
+
+<input type="text" id="o">
+<button onclick="x()">check prime or not</button>
+
+
+<button onclick="x()">test</button>
+<button onclick="x()">test2</button>
+<button onclick="x()">test3</button>
+<button onclick="makewhite()">test4</button>
+<button onmouseover="makeblack()" onmouseout="makewhite()">test5</button>
+</body>
+
+<script>
+    function x() {
+        alert("you clicked")
+    }
+function makeblack()
+{
+    document.getElementById("abc").style.backgroundColor="black"
+}
+function makewhite()
+{
+    document.getElementById("abc").style.backgroundColor="white"
+}
+
+
+
+
+
+    function e() {
+        var num = document.getElementById("o").value;
+        prime = true;
+        for (i = 2; i <= num - 1; i++) {
+            if (num % i == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime === true) {
+            alert("prime")
+        }
+        else {
+            alert("not prime")
+        }
+    }
+
+</script>
+
+
+<script>
+
+
+    function ceo() {
+        var num = document.getElementById("n").value;
+        if (num % 2 == 0) {
+            alert("even")
+        }
+        else {
+            alert("odd")
+        }
+    }
+
+</script>
+
+<script>
+
+    function add(a, b, e, d) {
+        c = a + b + e + d;
+        document.write(c)
+    }
+    function addab() {
+        a = 5
+        b = 6
+        c = a + b
+        document.write(c)
+    }
+
+
+    function addaa(a, b) {
+        c = a + b
+        return c
+    }
+
+    addab()
+    add(7, 2, 6, 1)
+
+    var result = addaa(5, 5);
+
+    document.write(result)
+</script>
