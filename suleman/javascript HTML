@@ -1,0 +1,3 @@
+<SCRIPT>
+var d=new date();
+document.write(d.date)
