@@ -1,43 +1,30 @@
 <h1 id="x">
+
 </h1>
-<script>
-    var d=new Date()
-   // document .write (d)
-    //document.getElementById("x").innerHTML=d.getHours()
-</script>
+<p id="q">
+
+</p>
 
 <script>
-    var d=new Date()
-    //document .write (d)
-    //document .write(d.getMonth());
-</script>
-<script>
-    var d=new Date()
-//document .write(d.getMinutes())
-
+var d = new Date();
+var y=d.getFullYear();
+var z=d.getMonth();
+var zz=d.getDate();
+document.getElementById("x").innerHTML = y.toString()+"-"+z.toString()+"-"+zz.toString();
+document.write(d.getMinutes())
 
 </script>
+<br>
 <script>
-    var d=new Date()
-   // document .write(d.getUTCMonth())
+
+var d = new Date();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+document.write(months[8])
 </script>
+
+<br>
+
 <script>
-    var d=new Date()
-   document.write(d.toLocaleTimeString())
+    var x= new Date();
+   document.write(x.getUTCMinutes());
 </script>
-<script>
-    var d=new Date()
-    //document.write(d.toUTCString())
-</script>
- <script>
-     var d=new Date()
-    // document.write(d.toJSOn())
- </script>
- <script>
-     var d=new Date()
-     //document.write(d.toUTCString())
- </script>
- <Script>
-     var d=new Date()
-     document.write(d.toString())
- </Script>
