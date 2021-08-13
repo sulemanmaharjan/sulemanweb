@@ -1,0 +1,49 @@
+<script>
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
+
+
+
+var x=1
+//x=String(x)// "1"
+x=x.toString();
+document.write(x+5)
+
+
+ x=123456
+ document.write(x.toExponential())
+
+ //1.23456e+5=1.23456*10^5
+
+
+ 
+</script>
+
+<br>
+<script >
+    z=1.23456;
+
+document.write(z.toFixed(4))
+</script>
+<br>
+<script>
+    var todaye=Date();
+    
+    document.write(todaye)
+</script>
+<br>
+<script>    
+    document.write(todaye.substr(0,3))
+</script>
+<br>
+<script>    
+    document.write(todaye.toUpperCase())
+</script>
